@@ -80,17 +80,16 @@ function weather_app_shortcode($atts) {
 
   // Output weather data
   $output = "<table class='weather-app-table'>";
-  $output .= "<thead><tr><th>City</th><th>Temperature (°C)</th><th>Humidity (%)</th><th>Wind Speed (m/s)</th><th>Description</th><th>Timestamp</th></tr></thead>";
+  $output .= "<thead><tr><th>Temperature (°C)</th><th>Humidity (%)</th><th>Wind Speed (m/s)</th><th>Description</th><th>Timestamp</th></tr></thead>";
   $output .= "<tbody>";
   
   $current_city = '';
   foreach ($results as $row) {
       if ($current_city != $row->city_name) {
           $current_city = $row->city_name;
-          $output .= '<tr><td colspan="7" style="background-color: #f4f4f4; font-weight: bold;">' . esc_html($current_city) . '</td></tr>';
+          $output .= '<tr><td colspan="7" style="text-align: center;background-color: #f4f4f4; font-weight: bold;">' . esc_html($current_city) . '</td></tr>';
       }
       $output .= "<tr>";
-      $output .= "<td>" . esc_html($row->city_name) . "</td>";
       $output .= "<td>" . esc_html($row->temperature) . "°C</td>";
       $output .= "<td>" . esc_html($row->humidity) . "%</td>";
       $output .= "<td>" . esc_html($row->wind_speed) . "m/s</td>";
