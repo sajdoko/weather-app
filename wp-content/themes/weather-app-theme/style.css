@@ -1,0 +1,30 @@
+/*
+Theme Name: Weather App Theme
+Theme URI: https://sajdoko.com
+Author: Sajmir Doko
+Author URI: https://sajdoko.com
+Description: A custom theme for the Weather App.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: weather-app-theme
+*/
+
+
+.weather-app-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.weather-app-table th, .weather-app-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.weather-app-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.weather-app-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
