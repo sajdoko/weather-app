@@ -75,7 +75,6 @@ function weather_app_shortcode($atts) {
     JOIN $cities_table c 
     ON wd.city_id = c.id 
     ORDER BY c.city_name, wd.timestamp DESC 
-    LIMIT 10
   ");
 
   // Output weather data
