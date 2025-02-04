@@ -9,8 +9,12 @@
 /wp-content/index.php
 /wp-content/languages
 /wp-content/plugins/index.php
+/wp-content/plugins/app_service_email
+/wp-content/plugins/w3-total-cache
+/wp-content/plugins/advanced-cache.php
 /wp-content/themes/index.php
 /wp-includes/
+/wp-content/cache/
 /index.php
 /license.txt
 /readme.html
